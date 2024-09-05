@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class Parallax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.down * parallaxSpeed * Time.deltaTime);
+        transform.Translate(Vector3.down * parallaxSpeed * Time.deltaTime); //tránh tốc độ tính theo khung hình
 
         if(transform.position.y < startPos.y - spriteHeight)
         {
